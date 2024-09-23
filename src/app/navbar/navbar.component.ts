@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
-import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink,HomeComponent],
+  imports: [RouterLink],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
+  constructor(public router: Router) { }
 }
