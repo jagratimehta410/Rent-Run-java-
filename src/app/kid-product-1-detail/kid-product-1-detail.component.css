@@ -1,0 +1,13 @@
+.product__details__pic__slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: auto; /* Center the slider */
+    overflow: hidden; /* Hide overflow */
+}
+
+.product__big__img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are block elements */
+}

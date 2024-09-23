@@ -40,8 +40,10 @@
           <nav class="header__menu">
             <ul>
               <li [class.active]="router.url === '/'"><a href="/">Home</a></li>
-              <li [class.active]="router.url === '/women'"><a href="/women">Women’s</a></li>
-              <li [class.active]="router.url === '/men'"><a href="/men">Men’s</a></li>
+              <li [class.active]="router.url === '/women'"><a href="/women">Women</a></li>
+              <li [class.active]="router.url === '/men'"><a href="/men">Men</a></li>
+              <li [class.active]="router.url === '/shop'"><a href="/kid">Kid</a></li>
+              <li [class.active]="router.url === '/shop'"><a href="/accessories">Accessories</a></li>
               <li [class.active]="router.url === '/shop'"><a href="/shop">Shop</a></li>
               <li [class.active]="router.url === '/pages'"><a href="#">Pages</a>
                 <ul class="dropdown">
@@ -51,7 +53,6 @@
                   <li><a href="/blog-details">Blog Details</a></li>
                 </ul>
               </li>
-              <li [class.active]="router.url === '/blog'"><a href="/blog">Blog</a></li>
               <li [class.active]="router.url === '/contact'"><a href="/contact">Contact</a></li>
             </ul>
           </nav>
