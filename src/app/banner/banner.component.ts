@@ -16,7 +16,7 @@ export class BannerComponent {
       src: 'assets/img/banner/banner-1.jpg',
       title: 'Empowering Communities Through Innovation & Technology',
       subtitle: 'Join Us in Building a Brighter Tomorrow',
-      description: `At Global Technopower Foundation, we're dedicated to bridging the digital divide and empowering marginalized communities through innovative projects like 'Coding on Wheels' and 'Women Empowerment'.`,
+      description: 'At Global Technopower Foundation, we\'re dedicated to bridging the digital divide and empowering marginalized communities through innovative projects like "Coding on Wheels" and "Women Empowerment".',
       donateLink: '/donation',
       volunteerLink: '#'
     },
@@ -24,7 +24,7 @@ export class BannerComponent {
       src: 'assets/img/banner/banner-2.jpg',
       title: 'Bridging the Digital Divide',
       subtitle: 'Empowering Through Technology',
-      description: `Explore our digital literacy programs designed to equip learners with essential skills for the digital age. From coding boot camps to computer literacy workshops, we're ensuring everyone has the tools they need to succeed in today's tech-driven world.`,
+      description: 'Explore our digital literacy programs designed to equip learners with essential skills for the digital age. From coding boot camps to computer literacy workshops, we\'re ensuring everyone has the tools they need to succeed in today\'s tech-driven world.',
       donateLink: '/donation',
       volunteerLink: '#'
     },
@@ -32,11 +32,12 @@ export class BannerComponent {
       src: 'assets/img/banner/banner-3.jpg',
       title: 'Join Our Mission to Make a Difference',
       subtitle: 'Empowering Communities for a Brighter Future',
-      description: `Together, we can break barriers, challenge stereotypes, and create a world where everyone has equal access to education, opportunities, and a better tomorrow.`,
+      description: 'Together, we can break barriers, challenge stereotypes, and create a world where everyone has equal access to education, opportunities, and a better tomorrow.',
       donateLink: '/donation',
       volunteerLink: '#'
     }
   ];
+  
 
   currentSlide = 0;
 

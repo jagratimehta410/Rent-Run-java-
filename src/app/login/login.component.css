@@ -1,0 +1,91 @@
+/* Basic Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+  
+  /* Login Wrapper */
+  .login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Login Container */
+  .login-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+  }
+  
+  /* Login Header */
+  .login-header h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input Fields */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .input-group input:focus {
+    border-color: #6e94bd;
+    box-shadow: 0 0 8px rgba(140, 171, 204, 0.25);
+  }
+  
+  /* Button Styles */
+  .button-group {
+    margin-top: 20px;
+  }
+  
+  .button-group .btn {
+    background-color: #8a6e31;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-group .btn:hover {
+    background-color: #3a90b8;
+  }
+  
+  /* Links */
+  .links {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .links a {
+    color: #684905;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  

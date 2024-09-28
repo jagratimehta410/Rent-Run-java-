@@ -1,1 +1,174 @@
-<p>kid-product-5-detail works!</p>
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__links">
+                    <a href="/"><i class="fa fa-home"></i> Home</a>
+                    <a href="/kid">Kid</a>
+                    <span>Vest Suit</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Product Details Section Begin -->
+<section class="product-details spad">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <!-- Product Thumbnails -->
+                <div class="product__details__pic">
+                    <div class="product__details__pic__left product__thumb nice-scroll">
+                        <a (click)="changeImage(thumbnails[0]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-5.jpg" alt="Thumbnail 1">
+                        </a>
+                        <a (click)="changeImage(thumbnails[1]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-5.1.jpg" alt="Thumbnail 2">
+                        </a>
+                        <a (click)="changeImage(thumbnails[2]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-5.2.jpg" alt="Thumbnail 3">
+                        </a>
+                        <a (click)="changeImage(thumbnails[3]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-5.3.jpg" alt="Thumbnail 4">
+                        </a>
+                    </div>
+                    <div class="product__details__slider__content">
+                        <img class="product__big__img" [src]="mainImage" alt="Product Image" (click)="openModal()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="product__details__text">
+                    <h3>Vest Suit<span>Brand: Elegant Kids | More Kids Suits</span></h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <span>( 85 reviews )</span>
+                    </div>
+                    <div class="product__details__price">₹ 2,500 <span>₹4,200</span></div>
+                    <p>This stylish Vest Suit is perfect for formal occasions. Made from premium fabric, it ensures comfort while offering a sleek look. Ideal for weddings, parties, or any other special event.</p>
+                    <div class="product__details__button">
+                        <div class="quantity">
+                            <span>Quantity:</span>
+                            <div class="pro-qty">
+                                <input type="text" value="1">
+                            </div>
+                        </div>
+                        <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
+                        <ul>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_adjust-horiz"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__details__widget">
+                        <ul>
+                            <li>
+                                <span>Availability:</span>
+                                <div class="stock__checkbox">
+                                    <label for="stockin">
+                                        In Stock
+                                        <input type="checkbox" id="stockin" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Available color:</span>
+                                <div class="color__checkbox">
+                                    <label for="black">
+                                        <input type="radio" name="color__radio" id="black" checked>
+                                        <span class="checkmark black-bg"></span>
+                                    </label>
+                                    <label for="blue">
+                                        <input type="radio" name="color__radio" id="blue">
+                                        <span class="checkmark blue-bg"></span>
+                                    </label>
+                                    <label for="gray">
+                                        <input type="radio" name="color__radio" id="gray">
+                                        <span class="checkmark gray-bg"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Available size:</span>
+                                <div class="size__btn">
+                                    <label for="xs-btn" class="active">
+                                        <input type="radio" id="xs-btn" checked>
+                                        XS
+                                    </label>
+                                    <label for="s-btn">
+                                        <input type="radio" id="s-btn">
+                                        S
+                                    </label>
+                                    <label for="m-btn">
+                                        <input type="radio" id="m-btn">
+                                        M
+                                    </label>
+                                    <label for="l-btn">
+                                        <input type="radio" id="l-btn">
+                                        L
+                                    </label>
+                                    <label for="xl-btn">
+                                        <input type="radio" id="xl-btn">
+                                        XL
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Promotions:</span>
+                                <p>Free shipping on orders over ₹1500</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="product__details__tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Specification</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Reviews ( 3 )</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                            <h6>Description</h6>
+                            <p>This elegant Vest Suit is crafted with high-quality materials to ensure both comfort and durability. It features a stylish vest paired with matching pants, making it an excellent choice for formal events.</p>
+                            <p>Available in various sizes and colors, this suit is perfect for giving your little one a polished look for any occasion.</p>
+                        </div>
+                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                            <h6>Specification</h6>
+                            <p><strong>Material:</strong> Cotton and Polyester Blend</p>
+                            <p><strong>Available Colors:</strong> Black, Blue, Gray</p>
+                            <p><strong>Available Sizes:</strong> XS, S, M, L, XL</p>
+                            <p><strong>Care Instructions:</strong> Dry clean only</p>
+                            <p><strong>Occasion:</strong> Weddings, Parties, Formal Events</p>
+                        </div>
+                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                            <h6>Reviews ( 3 )</h6>
+                            <p>"The perfect suit for my son's wedding attire!" - Richa M.</p>
+                            <p>"Great quality fabric, and the fit was excellent." - Sameer K.</p>
+                            <p>"Looks really smart on my child, very happy with the purchase!" - Nisha P.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Product Details Section End -->

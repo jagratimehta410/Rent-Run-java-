@@ -1,0 +1,23 @@
+<div class="login-wrapper" style="background-image: url('/assets/img/Login/login.jpg');">
+    <div class="login-container">
+      <div class="login-header">
+        <h2>Login</h2>
+      </div>
+      <form (ngSubmit)="onLogin()">
+        <div class="input-group">
+          <input type="email" placeholder="Email" [(ngModel)]="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+        </div>
+        <div class="button-group">
+          <button type="submit" class="btn">Login</button>
+        </div>
+        <div class="links">
+          <a href="#">Forgot Password?</a>
+          <a href="#">Create an Account</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  

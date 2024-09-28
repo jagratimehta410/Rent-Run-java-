@@ -1,48 +1,35 @@
-import { Component, AfterViewInit, NgZone } from '@angular/core';
+import { NgFor } from '@angular/common';
+import { Component } from '@angular/core'; 
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-kid-product-1-detail',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, NgFor],
   templateUrl: './kid-product-1-detail.component.html',
   styleUrls: ['./kid-product-1-detail.component.css']
 })
-export class KidProduct1DetailComponent implements AfterViewInit {
-  private currentIndex: number = 0;
-  private slides: HTMLImageElement[] = [];
-  private totalSlides: number = 0;
+export class KidProduct1DetailComponent {
+  public mainImage: string = 'assets/img/kid/product-1.jpg';  // Default main image
+  public thumbnails: string[] = [
+    'assets/img/kid/product-1.jpg',
+    'assets/img/kid/product-1.1.jpg',
+    'assets/img/kid/product-1.2.jpg',
+    'assets/img/kid/product-1.3.jpg'
+  ];
 
-  constructor(private ngZone: NgZone) {}
+  public showModal: boolean = false;
 
-  ngAfterViewInit() {
-    this.ngZone.runOutsideAngular(() => {
-      const slideElements = document.querySelectorAll('.product__big__img') as NodeListOf<HTMLImageElement>;
-      this.slides = Array.from(slideElements);
-      this.totalSlides = this.slides.length;
-
-      this.showSlide(this.currentIndex);
-      setInterval(() => {
-        this.moveSlide(1);
-      }, 3000);
-    });
+  changeImage(image: string) {
+    console.log('Changing image to:', image);
+    this.mainImage = image;  // Update the main image
   }
 
-  private showSlide(index: number) {
-    if (index >= this.totalSlides) {
-      this.currentIndex = 0;
-    } else if (index < 0) {
-      this.currentIndex = this.totalSlides - 1;
-    } else {
-      this.currentIndex = index;
-    }
-    
-    const offset = -this.currentIndex * 100;
-    const slider = document.querySelector('.product__details__pic__slider') as HTMLElement;
-    slider.style.transform = `translateX(${offset}%)`;
+  openModal() {
+    this.showModal = true; // Show the modal
   }
 
-  public moveSlide(direction: number) {
-    this.showSlide(this.currentIndex + direction);
+  closeModal() {
+    this.showModal = false; // Hide the modal
   }
 }

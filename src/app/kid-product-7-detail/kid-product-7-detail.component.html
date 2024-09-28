@@ -1,1 +1,171 @@
-<p>kid-product-7-detail works!</p>
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__links">
+                    <a href="/"><i class="fa fa-home"></i> Home</a>
+                    <a href="/kid">Kid</a>
+                    <span>Formal Toddler</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Product Details Section Begin -->
+<section class="product-details spad">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <!-- Product Thumbnails -->
+                <div class="product__details__pic">
+                    <div class="product__details__pic__left product__thumb nice-scroll">
+                        <a (click)="changeImage(thumbnails[0]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-7.jpg" alt="Thumbnail 1">
+                        </a>
+                        <a (click)="changeImage(thumbnails[1]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-7.1.jpg" alt="Thumbnail 2">
+                        </a>
+                        <a (click)="changeImage(thumbnails[2]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-7.2.jpg" alt="Thumbnail 3">
+                        </a>
+                        <a (click)="changeImage(thumbnails[3]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-7.3.jpg" alt="Thumbnail 4">
+                        </a>
+                    </div>
+                    <div class="product__details__slider__content">
+                        <img class="product__big__img" [src]="mainImage" alt="Formal Toddler Outfit" (click)="openModal()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="product__details__text">
+                    <h3>Formal Toddler Outfit<span>Brand: Smart Kids | Stylish Toddler Suits</span></h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <span>( 150 reviews )</span>
+                    </div>
+                    <div class="product__details__price">₹ 2,500 <span>₹3,500</span></div>
+                    <p>This formal toddler outfit is perfect for your little one’s special occasions. Designed with elegance and comfort in mind, it includes a soft cotton shirt, a vest, and adjustable pants. The modern design ensures your child looks stylish and feels comfortable.</p>
+                    <div class="product__details__button">
+                        <div class="quantity">
+                            <span>Quantity:</span>
+                            <div class="pro-qty">
+                                <input type="text" value="1">
+                            </div>
+                        </div>
+                        <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
+                        <ul>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_adjust-horiz"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__details__widget">
+                        <ul>
+                            <li>
+                                <span>Availability:</span>
+                                <div class="stock__checkbox">
+                                    <label for="stockin">
+                                        In Stock
+                                        <input type="checkbox" id="stockin" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Available color:</span>
+                                <div class="color__checkbox">
+                                    <label for="blue">
+                                        <input type="radio" name="color__radio" id="blue" checked>
+                                        <span class="checkmark blue-bg"></span>
+                                    </label>
+                                    <label for="grey">
+                                        <input type="radio" name="color__radio" id="grey">
+                                        <span class="checkmark grey-bg"></span>
+                                    </label>
+                                    <label for="navy">
+                                        <input type="radio" name="color__radio" id="navy">
+                                        <span class="checkmark navy-bg"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Available size:</span>
+                                <div class="size__btn">
+                                    <label for="s-btn" class="active">
+                                        <input type="radio" id="s-btn" checked>
+                                        S
+                                    </label>
+                                    <label for="m-btn">
+                                        <input type="radio" id="m-btn">
+                                        M
+                                    </label>
+                                    <label for="l-btn">
+                                        <input type="radio" id="l-btn">
+                                        L
+                                    </label>
+                                    <label for="xl-btn">
+                                        <input type="radio" id="xl-btn">
+                                        XL
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Promotions:</span>
+                                <p>Free shipping on orders over ₹2000</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="product__details__tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Specification</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Reviews ( 5 )</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                            <h6>Description</h6>
+                            <p>This Formal Toddler Outfit includes a soft cotton blend shirt, a stylish vest, and adjustable pants. Perfect for weddings, birthdays, or any special event. The fabric is breathable, ensuring your child stays comfortable throughout the day.</p>
+                        </div>
+                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                            <h6>Specification</h6>
+                            <p><strong>Material:</strong> Cotton Blend</p>
+                            <p><strong>Available Colors:</strong> Blue, Grey, Navy</p>
+                            <p><strong>Available Sizes:</strong> S, M, L, XL</p>
+                            <p><strong>Care Instructions:</strong> Machine wash cold, tumble dry low</p>
+                            <p><strong>Occasion:</strong> Weddings, Birthdays, Formal Events</p>
+                        </div>
+                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                            <h6>Reviews ( 5 )</h6>
+                            <p>"This outfit made my son look so handsome at the wedding!" - Meera S.</p>
+                            <p>"The material is soft and fits perfectly." - Arjun K.</p>
+                            <p>"Stylish and comfortable. Highly recommend!" - Neha P.</p>
+                            <p>"Perfect for formal events, and my toddler loved wearing it." - Vikas T.</p>
+                            <p>"Great quality for the price!" - Kavya J.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Product Details Section End -->

@@ -1,0 +1,44 @@
+/* Style for the color options */
+.color__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.color__checkbox label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.color__checkbox input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.color__checkbox .checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    position: relative;
+}
+
+.color__checkbox .checkmark.blue-bg {
+    background-color: #007bff; /* Blue color */
+}
+
+.color__checkbox .checkmark.grey-bg {
+    background-color: #808080; /* Grey color */
+}
+
+.color__checkbox .checkmark.navy-bg {
+    background-color: #1f3f5b; /* Navy color */
+}
+
+/* Highlight the selected color */
+.color__checkbox input[type="radio"]:checked + .checkmark {
+    border: 2px solid #000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

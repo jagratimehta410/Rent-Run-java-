@@ -1,1 +1,173 @@
-<p>kid-product-3-detail works!</p>
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__links">
+                    <a href="/"><i class="fa fa-home"></i> Home</a>
+                    <a href="/kid">Kid </a>
+                    <span>Princess Gown</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Product Details Section Begin -->
+<section class="product-details spad">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <!-- Product Thumbnails -->
+                <div class="product__details__pic">
+                    <div class="product__details__pic__left product__thumb nice-scroll">
+                        <a (click)="changeImage(thumbnails[0]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-3.jpg" alt="Thumbnail 1">
+                        </a>
+                        <a (click)="changeImage(thumbnails[1]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-3.1.jpg" alt="Thumbnail 2">
+                        </a>
+                        <a (click)="changeImage(thumbnails[2]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-3.2.jpg" alt="Thumbnail 3">
+                        </a>
+                        <a (click)="changeImage(thumbnails[3]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-3.3.jpg" alt="Thumbnail 4">
+                        </a>
+                    </div>
+                    <div class="product__details__slider__content">
+                        <img class="product__big__img" [src]="mainImage" alt="Product Image" (click)="openModal()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="product__details__text">
+                    <h3>Princess Gown<span>Brand: Elegant Couture | More Women’s Gowns</span></h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <span>( 256 reviews )</span>
+                    </div>
+                    <div class="product__details__price">₹ 2,150 <span>₹4,150</span></div>
+                    <p>This luxurious Princess Gown is crafted from premium satin, featuring intricate lace detailing and a full skirt for a timeless, elegant look perfect for any formal occasion.</p>
+                    <div class="product__details__button">
+                        <div class="quantity">
+                            <span>Quantity:</span>
+                            <div class="pro-qty">
+                                <input type="text" value="1">
+                            </div>
+                        </div>
+                        <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
+                        <ul>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_adjust-horiz"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__details__widget">
+                        <ul>
+                            <li>
+                                <span>Availability:</span>
+                                <div class="stock__checkbox">
+                                    <label for="stockin">
+                                        In Stock
+                                        <input type="checkbox" id="stockin" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Available color:</span>
+                                <div class="color__checkbox">
+                                    <label for="red">
+                                        <input type="radio" name="color__radio" id="red" checked>
+                                        <span class="checkmark red-bg"></span>
+                                    </label>
+                                    <label for="black">
+                                        <input type="radio" name="color__radio" id="black">
+                                        <span class="checkmark black-bg"></span>
+                                    </label>
+                                    <label for="blue">
+                                        <input type="radio" name="color__radio" id="blue">
+                                        <span class="checkmark blue-bg"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Available size:</span>
+                                <div class="size__btn">
+                                    <label for="xs-btn" class="active">
+                                        <input type="radio" id="xs-btn" checked>
+                                        XS
+                                    </label>
+                                    <label for="s-btn">
+                                        <input type="radio" id="s-btn">
+                                        S
+                                    </label>
+                                    <label for="m-btn">
+                                        <input type="radio" id="m-btn">
+                                        M
+                                    </label>
+                                    <label for="l-btn">
+                                        <input type="radio" id="l-btn">
+                                        L
+                                    </label>
+                                    <label for="xl-btn">
+                                        <input type="radio" id="xl-btn">
+                                        XL
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Promotions:</span>
+                                <p>Free shipping on orders over ₹1000</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="product__details__tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Specification</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Reviews ( 5 )</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                            <h6>Description</h6>
+                            <p>This Princess Gown is designed with a classic silhouette, offering a fitted bodice that flows into a full skirt. The gown is made from high-quality satin, ensuring a smooth and luxurious feel. The intricate lace detailing adds a touch of elegance, making it an ideal choice for weddings, proms, and other formal events.</p>
+                            <p>The gown is available in various colors and sizes, allowing you to find the perfect match for your style and preference. Pair it with your favorite accessories for a complete look.</p>
+                        </div>
+                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                            <h6>Specification</h6>
+                            <p><strong>Material:</strong> Satin with lace detailing</p>
+                            <p><strong>Available Colors:</strong> Red, Black, Blue</p>
+                            <p><strong>Available Sizes:</strong> XS, S, M, L, XL</p>
+                            <p><strong>Care Instructions:</strong> Dry clean only</p>
+                            <p><strong>Occasion:</strong> Weddings, Proms, Formal Events</p>
+                        </div>
+                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                            <h6>Reviews ( 5 )</h6>
+                            <p>"This gown is absolutely stunning! The quality is excellent and it fits perfectly." - Sarah M.</p>
+                            <p>"I wore this gown to a wedding and received so many compliments. It's beautiful and comfortable." - Emily R.</p>
+                            <p>"The lace detailing is exquisite. Highly recommend this gown for any formal event." - Jessica T.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Product Details Section End -->

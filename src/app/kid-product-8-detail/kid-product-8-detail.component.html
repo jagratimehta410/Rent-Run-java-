@@ -1,1 +1,171 @@
-<p>kid-product-8-detail works!</p>
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__links">
+                    <a href="/"><i class="fa fa-home"></i> Home</a>
+                    <a href="/kid">Kid</a>
+                    <span>Sherwani Waistcoat</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Product Details Section Begin -->
+<section class="product-details spad">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <!-- Product Thumbnails -->
+                <div class="product__details__pic">
+                    <div class="product__details__pic__left product__thumb nice-scroll">
+                        <a (click)="changeImage(thumbnails[0]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-8.jpg" alt="Thumbnail 1">
+                        </a>
+                        <a (click)="changeImage(thumbnails[1]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-8.1.jpg" alt="Thumbnail 2">
+                        </a>
+                        <a (click)="changeImage(thumbnails[2]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-8.2.jpg" alt="Thumbnail 3">
+                        </a>
+                        <a (click)="changeImage(thumbnails[3]); openModal()" href="javascript:void(0);">
+                            <img src="assets/img/kid/product-8.3.jpg" alt="Thumbnail 4">
+                        </a>
+                    </div>
+                    <div class="product__details__slider__content">
+                        <img class="product__big__img" [src]="mainImage" alt="Kid's Sherwani Waistcoat" (click)="openModal()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="product__details__text">
+                    <h3>Kid's Sherwani Waistcoat<span>Brand: Royal Kids | Elegant Traditional Wear</span></h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <span>( 200 reviews )</span>
+                    </div>
+                    <div class="product__details__price">₹ 3,000 <span>₹4,500</span></div>
+                    <p>This elegant Sherwani Waistcoat is perfect for festive occasions and weddings. Crafted from premium fabric, it features intricate embroidery and a comfortable fit. Your little prince will look stunning in this traditional attire.</p>
+                    <div class="product__details__button">
+                        <div class="quantity">
+                            <span>Quantity:</span>
+                            <div class="pro-qty">
+                                <input type="text" value="1">
+                            </div>
+                        </div>
+                        <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
+                        <ul>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_adjust-horiz"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__details__widget">
+                        <ul>
+                            <li>
+                                <span>Availability:</span>
+                                <div class="stock__checkbox">
+                                    <label for="stockin">
+                                        In Stock
+                                        <input type="checkbox" id="stockin" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Available color:</span>
+                                <div class="color__checkbox">
+                                    <label for="gold">
+                                        <input type="radio" name="color__radio" id="gold" checked>
+                                        <span class="checkmark gold-bg"></span>
+                                    </label>
+                                    <label for="silver">
+                                        <input type="radio" name="color__radio" id="silver">
+                                        <span class="checkmark silver-bg"></span>
+                                    </label>
+                                    <label for="red">
+                                        <input type="radio" name="color__radio" id="red">
+                                        <span class="checkmark red-bg"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Available size:</span>
+                                <div class="size__btn">
+                                    <label for="s-btn" class="active">
+                                        <input type="radio" id="s-btn" checked>
+                                        S
+                                    </label>
+                                    <label for="m-btn">
+                                        <input type="radio" id="m-btn">
+                                        M
+                                    </label>
+                                    <label for="l-btn">
+                                        <input type="radio" id="l-btn">
+                                        L
+                                    </label>
+                                    <label for="xl-btn">
+                                        <input type="radio" id="xl-btn">
+                                        XL
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Promotions:</span>
+                                <p>Free shipping on orders over ₹2000</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="product__details__tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Specification</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Reviews ( 5 )</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                            <h6>Description</h6>
+                            <p>This Kid's Sherwani Waistcoat is designed to enhance your child's traditional look. Made from luxurious fabric with exquisite detailing, it's suitable for weddings, festivals, and special occasions. Pair it with a kurta for a complete ethnic ensemble.</p>
+                        </div>
+                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                            <h6>Specification</h6>
+                            <p><strong>Material:</strong> Premium Fabric</p>
+                            <p><strong>Available Colors:</strong> Gold, Silver, Red</p>
+                            <p><strong>Available Sizes:</strong> S, M, L, XL</p>
+                            <p><strong>Care Instructions:</strong> Dry clean only</p>
+                            <p><strong>Occasion:</strong> Weddings, Festivals, Formal Events</p>
+                        </div>
+                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                            <h6>Reviews ( 5 )</h6>
+                            <p>"Absolutely stunning! My son looked like a prince at the wedding." - Priya M.</p>
+                            <p>"The quality is excellent, and the fit is perfect." - Rohit K.</p>
+                            <p>"Beautiful design! Worth every penny." - Sneha J.</p>
+                            <p>"My kid loves wearing it for family functions." - Anjali T.</p>
+                            <p>"Highly recommend for festive occasions!" - Sameer P.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Product Details Section End -->

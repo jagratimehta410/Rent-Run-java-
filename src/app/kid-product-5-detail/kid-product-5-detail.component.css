@@ -1,0 +1,50 @@
+/* Container for color options */
+.color__checkbox {
+    display: flex;                /* Aligns color circles horizontally */
+    gap: 15px;                   /* Space between each color option */
+}
+
+/* Style for the color label */
+.color__checkbox label {
+    position: relative;          /* Aligns the checkmark with the radio button */
+    cursor: pointer;             /* Changes the cursor to pointer */
+}
+
+/* Hide the default radio button */
+.color__checkbox input[type="radio"] {
+    position: absolute;          /* Positions it off the screen */
+    opacity: 0;                 /* Hides the actual radio button */
+    cursor: pointer;             /* Makes it clickable */
+}
+
+/* Checkmark style (color circle) */
+.color__checkbox .checkmark {
+    display: inline-block;       /* Allows block styling */
+    width: 20px;                /* Sets the size of the color circle */
+    height: 20px;               /* Sets the height of the color circle */
+    border-radius: 50%;         /* Makes it a circle */
+    border: 2px solid #ccc;     /* Border for the unselected state */
+    position: relative;         /* Allows positioning relative to label */
+    transition: all 0.3s ease;  /* Smooth transition for changes */
+}
+
+/* Black color option */
+.color__checkbox .checkmark.black-bg {
+    background-color: #000;     /* Black background */
+}
+
+/* Blue color option */
+.color__checkbox .checkmark.blue-bg {
+    background-color: #0000ff;  /* Blue background */
+}
+
+/* Gray color option */
+.color__checkbox .checkmark.gray-bg {
+    background-color: #808080;   /* Gray background */
+}
+
+/* Add a border and shadow when selected */
+.color__checkbox input[type="radio"]:checked + .checkmark {
+    border: 2px solid #000;     /* Changes border to black when selected */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+}
